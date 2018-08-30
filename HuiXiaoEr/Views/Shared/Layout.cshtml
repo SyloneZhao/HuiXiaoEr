@@ -1,0 +1,21 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+    <script src="~/Content/js/jquery.min.js"></script>
+    <link href="~/Content/bootstrap/bootstrap.css" rel="stylesheet" />
+    <script src="~/Content/bootstrap/bootstrap.js"></script>
+    <link href="~/Content/bootstrap-table/bootstrap-table.css" rel="stylesheet" />
+    <script src="~/Content/bootstrap-table/bootstrap-table.js"></script>
+    <link href="~/Content/css/animate.min.css" rel="stylesheet">
+    <link href="~/Content/css/style.min.css" rel="stylesheet">
+    <script src="~/Content/js/common.js"></script>
+    <script src="~/Content/layer/layer.js"></script>
+</head>
+<body>
+    @RenderBody()
+    @Html.AntiForgeryToken()
+</body>
+</html>

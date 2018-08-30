@@ -5,6 +5,16 @@ VisualStudioVersion = 14.0.25420.1
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HuiXiaoEr", "HuiXiaoEr\HuiXiaoEr.csproj", "{1EA9544C-4A40-4FD9-BACE-B02D4944FBB8}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SqlSugar", "SqlSugar\SqlSugar.csproj", "{489BB790-226C-4FAD-8D1E-51D72A7FF8E5}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sylone.Comm", "Sylone.Comm\Sylone.Comm.csproj", "{17F17710-88B4-4DA2-8A4F-513762167D65}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sylone.Service", "Sylone.Service\Sylone.Service.csproj", "{C451BF87-29B9-4CC3-9FAA-5C5339EE999E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HuiXiaoEr.Model", "HuiXiaoEr.Model\HuiXiaoEr.Model.csproj", "{98CAFFA7-2DCA-4A8E-B1BA-4999E948CA4D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Sylone.Tests", "Sylone.Tests\Sylone.Tests.csproj", "{E24518D1-970D-4819-BE22-F609D0BF2DC6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +25,26 @@ Global
 		{1EA9544C-4A40-4FD9-BACE-B02D4944FBB8}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{1EA9544C-4A40-4FD9-BACE-B02D4944FBB8}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{1EA9544C-4A40-4FD9-BACE-B02D4944FBB8}.Release|Any CPU.Build.0 = Release|Any CPU
+		{489BB790-226C-4FAD-8D1E-51D72A7FF8E5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{489BB790-226C-4FAD-8D1E-51D72A7FF8E5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{489BB790-226C-4FAD-8D1E-51D72A7FF8E5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{489BB790-226C-4FAD-8D1E-51D72A7FF8E5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17F17710-88B4-4DA2-8A4F-513762167D65}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17F17710-88B4-4DA2-8A4F-513762167D65}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17F17710-88B4-4DA2-8A4F-513762167D65}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17F17710-88B4-4DA2-8A4F-513762167D65}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C451BF87-29B9-4CC3-9FAA-5C5339EE999E}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C451BF87-29B9-4CC3-9FAA-5C5339EE999E}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C451BF87-29B9-4CC3-9FAA-5C5339EE999E}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C451BF87-29B9-4CC3-9FAA-5C5339EE999E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98CAFFA7-2DCA-4A8E-B1BA-4999E948CA4D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98CAFFA7-2DCA-4A8E-B1BA-4999E948CA4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98CAFFA7-2DCA-4A8E-B1BA-4999E948CA4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98CAFFA7-2DCA-4A8E-B1BA-4999E948CA4D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E24518D1-970D-4819-BE22-F609D0BF2DC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E24518D1-970D-4819-BE22-F609D0BF2DC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E24518D1-970D-4819-BE22-F609D0BF2DC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E24518D1-970D-4819-BE22-F609D0BF2DC6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

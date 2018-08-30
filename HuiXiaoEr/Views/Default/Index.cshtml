@@ -1,0 +1,79 @@
+﻿
+@{
+    ViewBag.Title = "登录";
+    Layout = "~/Views/Shared/Layout.cshtml";
+}
+<body class="gray-bg">
+    <div class="middle-box text-center loginscreen  animated fadeInDown">
+        <div>
+            <h3>管理员登录</h3>
+            <div class="form-group">
+                <input type="text" id="txt_account" class="form-control" placeholder="管理员帐号" required="">
+            </div>
+            <div class="form-group">
+                <input type="password" id="txt_password" class="form-control" placeholder="管理员密码" required="">
+            </div>
+            <button type="button" id="login_button" class="btn btn-primary block full-width m-b">登 录</button>
+            <div class="login_tips" style="color:red;"></div>
+        </div>
+    </div>
+</body>
+    <script type="text/javascript">
+        (function ($) {
+            $.myLogin = {
+                formMessage: function (msg) {
+                    $('.login_tips').find('.tips_msg').remove();
+                    $('.login_tips').append('<div class="tips_msg"><i class="fa fa-question-circle"></i>' + msg + '</div>');
+                },
+                loginClick: function () {
+                    var $username = $("#txt_account");
+                    var $password = $("#txt_password");
+                    if ($username.val() == "") {
+                        $username.focus();
+                        $.myLogin.formMessage('请输入用户名/手机号/邮箱。');
+                        return false;
+                    } else if ($password.val() == "") {
+                        $password.focus();
+                        $.myLogin.formMessage('请输入登录密码。');
+                        return false;
+                    } else {
+                        $("#login_button").attr('disabled', 'disabled').html("loading...");
+
+                        $.ajax({
+                            url: "/Default/Login",
+                            data: { adminName: $.trim($username.val()), adminPass: $.trim($password.val()) },
+                            type: "post",
+                            dataType: "json",
+                            success: function (data) {
+                                if (data.state == "success") {
+                                    $("#login_button").find('span').html("登录成功，正在跳转...");
+                                    window.setTimeout(function () {
+                                        window.location.href = "/Admin/Main/Index";
+                                    }, 500);
+                                } else {
+                                    $("#login_button").removeAttr('disabled').html("登 录");
+                                    $.myLogin.formMessage(data.message);
+                                }
+                            }
+                        });
+                    }
+                },
+                init: function () {
+                    $("#login_button").click(function () {
+                        $.myLogin.loginClick();
+                    });
+                    document.onkeydown = function (e) {
+                        if (!e) e = window.event;
+                        if ((e.keyCode || e.which) == 13) {
+                            document.getElementById("login_button").focus();
+                            document.getElementById("login_button").click();
+                        }
+                    }
+                }
+            };
+            $(function () {
+                $.myLogin.init();
+            });
+        })(jQuery);
+    </script>
+
